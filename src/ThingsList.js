@@ -18,15 +18,7 @@ export class ThingsList extends Component {
 
     addList(input) {
         if (input === "") {
-            Swal.fire({
-                title: 'Please enter text!',
-                showClass: {
-                  popup: 'animate__animated animate__fadeInDown'
-                },
-                hideClass: {
-                  popup: 'animate__animated animate__fadeOutUp'
-                }
-              })
+            alert("Please enter text!");
         }
         else {
         let listArray = this.state.thingsList;
